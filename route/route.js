@@ -1,7 +1,8 @@
 const router = require('express').Router();
-const { formfilled }  = require('../Controller/appController.js');
+const { contactController , applicationController }  = require('../Controller/appController.js');
 
 
-router.post('/form/formfilled', formfilled)
+router.post('/application', applicationController)
+router.post('/contact', contactController)
 
 module.exports = router;
